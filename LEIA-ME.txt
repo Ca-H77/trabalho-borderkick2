@@ -1,0 +1,32 @@
+BORDERKICK — PROTÓTIPO FRONT-END
+
+Como abrir:
+1. Extraia o arquivo ZIP.
+2. Abra index.html no navegador.
+3. Navegue pelo menu e pelos botões para testar as páginas.
+
+Páginas incluídas:
+- index.html: página inicial
+- login.html: tela de login
+- cadastro.html: cadastro de torcedor com seleção de documento
+- pacote.html: cards de pacotes ilustrativos
+- validacao.html: painel interno com busca, filtro e alteração demonstrativa do status
+- voucher.html: voucher ilustrativo com opção de imprimir
+- css/style.css: identidade visual e responsividade
+- js/script.js: interações de demonstração
+
+IMPORTANTE:
+- Este é um protótipo de front-end. Não há backend nem conexão com banco de dados.
+- Os dados, preços, nomes, partidas, datas e status são fictícios.
+- O formulário não salva dados; os alertas indicam onde integrar o backend.
+- A validação real de visto e a regra de bloqueio devem ser implementadas no servidor, não apenas no navegador.
+- O QR Code do voucher é ilustrativo e não pode ser usado como ingresso.
+- As fotos usam links externos do Unsplash e exigem internet para carregar.
+- A fonte Inter é carregada do Google Fonts; sem internet, o site usa fontes locais alternativas.
+
+Próximos passos para integrar:
+1. Definir com a pessoa responsável pelo banco o modelo das tabelas e os campos.
+2. Definir endpoints/API com quem está fazendo o código.
+3. Substituir os alertas por requisições reais ao backend.
+4. Implementar autenticação, upload seguro, permissões de atendente e validação no servidor.
+5. Aplicar a regra: se o pacote incluir jogo nos EUA, exigir visto americano com status "Aprovado e Validado" antes de concluir a venda.
